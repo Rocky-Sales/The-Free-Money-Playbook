@@ -1,38 +1,47 @@
+/* styles.css */
+
+/* General body styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /* Fallback font stack */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: black; /* Set background color */
+    color: white; /* Set default text color */
 }
 
+/* Animation for pulsing effect */
 .animate-pulse {
     animation: pulse 5s ease-in-out infinite;
 }
 
-html, body {
-    height: 100%;
-    overflow-y: auto; /* Ensure vertical scrolling is allowed */
-}
-
-body {
-    padding-top: 80px; /* Adjust based on header height */
-}
-
-.min-h-screen {
-    min-height: auto !important; /* Let content define height */
-}
-
-footer {
-    position: relative;
-    bottom: auto;
-}
-#buy-now {
-    margin-bottom: 100px; /* Ensures you can scroll down */
-}
-
-
 @keyframes pulse {
     0%, 100% {
-        opacity: 0.15;
+        opacity: 0.15; /* Start and end with low opacity */
     }
     50% {
-        opacity: 0.3;
+        opacity: 0.3; /* Midpoint with higher opacity */
     }
 }
+/* Additional styles for specific elements can be added here */
+h1 {
+    margin-top: 20px; /* Space above the headline */
+}
+
+h2 {
+    margin-top: 16px; /* Space above section headings */
+}
+
+p {
+    margin-top: 6px; /* Space above paragraphs */
+}
+
+/* Button styles */
+button {
+    transition: background-color 0.3s ease; /* Smooth transition for button hover */
+}
+
+button:hover {
+    background-color: #fbbf24; /* Change background color on hover */
+}
+
+/* Responsive styles can be added here if needed */
