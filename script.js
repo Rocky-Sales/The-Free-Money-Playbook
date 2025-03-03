@@ -5,8 +5,6 @@ function scrollToBuyNow() {
     const buyNowSection = document.getElementById('buy-now');
     if (buyNowSection) {
         buyNowSection.scrollIntoView({ behavior: 'smooth' });
-    } else {
-        console.error("Buy Now section not found.");
     }
 }
 
