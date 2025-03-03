@@ -1,6 +1,13 @@
+// script.js
+
 // Scroll to "Buy Now" section when button is clicked
 function scrollToBuyNow() {
-    document.getElementById('buy-now')?.scrollIntoView({ behavior: 'smooth' });
+    const buyNowSection = document.getElementById('buy-now');
+    if (buyNowSection) {
+        buyNowSection.scrollIntoView({ behavior: 'smooth' });
+    } else {
+        console.error("Buy Now section not found.");
+    }
 }
 
 // List of benefits
@@ -24,5 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
             item.innerHTML = `<span class="text-green-400">✔️</span><p class="text-gray-300 text-lg">${benefit}</p>`;
             benefitsList.appendChild(item);
         });
+    } else {
+        console.error("Benefits list element not found.");
     }
 });
