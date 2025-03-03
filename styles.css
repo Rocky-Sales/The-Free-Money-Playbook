@@ -11,6 +11,21 @@ html, body {
     overflow-y: auto; /* Ensure vertical scrolling is allowed */
 }
 
+body {
+    padding-top: 80px; /* Adjust based on header height */
+}
+
+.min-h-screen {
+    min-height: auto !important; /* Let content define height */
+}
+
+footer {
+    position: relative;
+    bottom: auto;
+}
+#buy-now {
+    margin-bottom: 100px; /* Ensures you can scroll down */
+}
 
 
 @keyframes pulse {
