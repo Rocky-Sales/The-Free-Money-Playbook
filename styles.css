@@ -9,7 +9,7 @@ body {
 
 /* Animation for pulsing effect */
 .animate-pulse {
-    animation: pulse 5s ease-in-out infinite;
+    animation: pulse 10s ease-in-out infinite;
 }
 
 @keyframes pulse {
